@@ -76,7 +76,7 @@
                 <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
               </div>
               <div class="card-footer d-grid gap-2">
-                <button class="btn btn-outline-secondary">Acheter</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#echarpeModal">Acheter</button>
               </div>
             </div>
             
@@ -86,7 +86,7 @@
                 <h5>La Coupe des 3 Sorciers</h5>
               </div>
               <div class="card-footer d-grid gap-2">
-                <button class="btn btn-outline-secondary">Acheter</button>
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#coupeModal">Acheter</button>
               </div>
             </div>
             
@@ -96,7 +96,7 @@
                 <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
               </div>
               <div class="card-footer d-grid gap-2">
-                <button class="btn btn-outline-secondary">Acheter</button>
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#baguetteModal">Acheter</button>
               </div>
             </div>
           </div>
@@ -104,68 +104,65 @@
       </section>
       
       <!-- CINQUIEME ETAPE -->
-      <footer>
-        <div class="container">
+      <footer class="bg-dark"">
+        <div class="container text-white">
           2019 © Harry Potter
         </div>
       </footer>
       
       <!-- MODAL --->
-      <div id="echarpeModal">
-        <div>
-          <div>
-            <div>
-              <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
-              <button>
-                <span>&times;</span>
+      <div id="echarpeModal" class="modal" aria-labelledby="echarpeModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
               </button>
             </div>
-            <div>
-              <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" />
+            <div class="modal-body">
+              <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" class="w-100"/>
             </div>
-            <div>
-              <button>Fermer</button>
-              <button>Ajouter au panier</button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Indisponible pour le moment">Ajouter au panier</button>
             </div>
           </div>
         </div>
       </div>
       
-      <div id="coupeModal">
-        <div>
-          <div>
-            <div>
-              <h5>La Coupe des 3 Sorciers</h5>
-              <button>
-                <span>&times;</span>
+      <div id="coupeModal" class="modal" aria-labelledby="coupeModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">La Coupe des 3 Sorciers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
               </button>
             </div>
-            <div>
-              <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" />
+            <div class="modal-body">
+              <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" class="w-100"/>
             </div>
-            <div>
-              <button>Fermer</button>
-              <button>Ajouter au panier</button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Indisponible pour le moment">Ajouter au panier</button>
             </div>
           </div>
         </div>
       </div>
       
-      <div id="baguetteModal">
-        <div>
-          <div>
-            <div>
-              <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
-              <button>
-                <span>&times;</span>
+      <div id="baguetteModal" class="modal" aria-labelledby="baguetteModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Baguette magique de Harry Potter avec boîte Ollivander</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
               </button>
             </div>
-            <div>
-              <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" />
+            <div class="modal-body">
+              <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" class="w-100"/>
             </div>
-            <div>
-              <button>Fermer</button>
-              <button>Ajouter au panier</button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Indisponible pour le moment">Ajouter au panier</button>
             </div>
           </div>
         </div>
