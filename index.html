@@ -16,12 +16,11 @@
       <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <div class="container">
           <div class="navbar-brand">Portail</div>
-          <!-- NE PAS TOUCHER (boutton en responsive : oui je suis gentil) -->
           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText">
             <span class="navbar-toggler-icon"></span>
           </button>
           
-          <!-- LES LIENS (Je vous laisse l'ID navbarText, mais pensez aux classes) -->
+          <!-- LES LIENS -->
           <div id="navbarText" class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -41,22 +40,23 @@
         </div>
       </nav>
       
-      <!-- TROISIEME ETAPE / UTILISER LA GRILLE BOOTSTRAP -->
-      <section style="background-image: url('https://believemy.com/uploads/f536b82491a5a3c07e60cf2b977ded35_03b49c2a70d5bf98d966a517f96cfb87.jpeg')">
-        <div class="container">
+      <!-- TROISIEME ETAPE -->
+      <section class="row" style="background-image: url('https://believemy.com/uploads/f536b82491a5a3c07e60cf2b977ded35_03b49c2a70d5bf98d966a517f96cfb87.jpeg')">
+        <div class="container text-center text-light">
           <div>
             <div>
-              <h3>Inscriptions ouvertes<span>Année 2180-2181</span></h3>
+              <h3 class="display-6 fw-bold pt-4">Inscriptions ouvertes</h3>
+              <div class="display-6 fw-light mt-4 mb-2">Année 2180-2181</div>
               
-              <div>
-                <button>
+              <div class="dropdown mb-4">
+                <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   Documents
                 </button>
-                <div>
-                  <a>Dossier d'inscription</a>
-                  <a>Règlement intérieur</a>
-                  <a>Documents concernant l'internat</a>
-                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dossier d'inscription</a></li>
+                  <li><a class="dropdown-item" href="#">Règlement intérieur</a></li>
+                  <li><a class="dropdown-item" href="#">Documents concernant l'internat</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -69,7 +69,6 @@
         
           <h2>Meilleures ventes</h2>
           
-          <!-- UTILISER LA CLASSE POUR REGROUPER LES CARTES / PAS LA GRILLE BOOTSTRAP -->
           <div>
             <div>
               <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" />
